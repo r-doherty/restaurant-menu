@@ -101,8 +101,8 @@ public class MenuItem {
         }
 
         System.out.println();
-        File file = new File("../RestaurantMenu/src/restaurant/MenuItem.java");
-        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+        private File file = new File("../RestaurantMenu/src/restaurant/MenuItem.java");
+        private SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
         System.out.println("Menu last updated : " + sdf.format(file.lastModified()));
     }
 }
