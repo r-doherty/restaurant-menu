@@ -26,17 +26,19 @@ public class MenuItem {
         this.status = status;
     }
 
-    public String getName() {return name;}
-    public double getPrice() {return price;}
-    public String getDescription() {return description;}
-    public String getCategory() {return category;}
-//    public Date getDateAdded() {return dateAdded;}
 
-    private void setName(String aName) {name = aName;}
-    private void setPrice(double aPrice) {price = aPrice;}
-    private void setDescription(String aDescription) {description = aDescription;}
-    private void setCategory(String aCategory) {category = aCategory;}
-//    private void setDateAdded(Date aDate) {dateAdded = aDate;}
+//    Created these getters + setters but chose another way of approaching assignment
+//    public String getName() {return name;}
+//    public double getPrice() {return price;}
+//    public String getDescription() {return description;}
+//    public String getCategory() {return category;}
+//    public Date getStatus() {return status;}
+//
+//    private void setName(String aName) {name = aName;}
+//    private void setPrice(double aPrice) {price = aPrice;}
+//    private void setDescription(String aDescription) {description = aDescription;}
+//    private void setCategory(String aCategory) {category = aCategory;}
+//    private void setStatus(String aStatus) {status = aStatus;}
 
     public static MenuItem banhMi = new MenuItem("Banh Mi", 8.99, "Pork, Chicken, Tofu, or Mushroom on a Toasted Vietnamese Baguette topped with our truck made pickled carrots & daikon, cucumbers, cilantro, jalapenos, and our addicting roasted garlic Sriracha mayo", "Main Course", "New");
     public static MenuItem kickinChicken = new MenuItem("Kicken Chicken", 8.99, "chicken carnitas, queso fresco, Korean bbq sauce, cucumber, pickled onions, radish, candied jalapeños, sriracha crema", "Main Course", "Old");
@@ -101,8 +103,8 @@ public class MenuItem {
         }
 
         System.out.println();
-        private File file = new File("../RestaurantMenu/src/restaurant/MenuItem.java");
-        private SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+        File file = new File("../RestaurantMenu/src/restaurant/MenuItem.java");
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
         System.out.println("Menu last updated : " + sdf.format(file.lastModified()));
     }
 }
